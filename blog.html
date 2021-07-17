@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOG</title>
+<!--giving meta tag to provide metadata about the HTML document-->
+	<meta charset="UTF-8">
+  	<meta name="description" content="Portfolio">
+  	<meta name="keywords" content="blog,research,CV">
+  	<meta name="author" content="Saurav Kandel">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="refresh" content="30">
+<!-- link for the use of the external css build in another file-->
+	<link rel="stylesheet" type="text/css" href="../css/external css.css">
+
+<!--decalring class for internal css to be used down in the code-->
+	<style type="text/css">
+		.logo img
+		{
+
+			position: absolute;
+
+		}
+
+		.slider 
+		{
+      		width: 30%;
+      		height: 300px;
+      		margin: 30px auto;
+      		box-sizing: border-box;
+      		overflow: hidden;
+      		box-shadow: 5px 5px 10px grey;
+        }
+        .div{
+        	width: 80%;
+         	height: 1000px;
+      		background-color: #363e4a; 
+      		box-shadow: 8px 8px 10px grey;
+
+        }
+        .h2
+		{
+			font-size: 30px;
+			font-style:bold;
+			text-align: center;
+			color: white;
+			padding: 14px 50px;
+			font-family: arial;
+		}
+
+        	.pstyle
+		{
+			font-size: 23px;
+			color: #ffffff;
+			margin: 20px;
+			font-family: arial;
+			text-align: justify;
+			line-height: 1.5;
+
+		}	
+
+       
+
+</style>
+
+</head>
+<body style="background: url(../images/bg.jfif);background-size: 100% 100%;">
+
+	<div style="height: 1700px; width: 100%;">
+
+		<div style="height:200px;width:100%">
+
+		<header class="header">
+
+			<div class="logo"><a href="#"><img src="../images/logo.jpg" alt="logo" width="400px" height="200px"></a>
+			</div>
+			
+			<nav class="topnav";>
+		
+				<table class="navtable">
+				<tr>
+
+					<th>
+						<a  href  ="../home.html" >Home</a>
+					</th>
+						
+					<th>
+						<a  href ="CV.html"  >CV</a>
+					</th>
+						
+					<th>
+						<a class="active" href ="blog.html" >Blog</a>
+					</th>
+
+					<th>
+						<a href ="research.html">Research</a>
+					</th>
+
+					<th>
+						<a href ="contact_us.html" >Contact us</a>
+					</th>
+			
+				</tr>
+
+
+				</table>   
+
+			</nav>
+
+		</header>
+
+		</div>
+
+		<div style="margin-top: 10px">
+			<h1 align="CENTER" > WELCOME TO THE BLOGS ! </h1>
+		</div>
+<!-- calling the class slider declared as an internal css in the code-->
+		<div class="slider">
+
+    <div id="img" style="height: 100%; width: 100%">
+      <img src="../images/5.jpg">
+    </div>
+
+    </div>
+<!-- writing the js for the image slider loop opertaion-->
+    <script>
+
+    var images = ['../images/1.jpg', '../images/2.png', '../images/3.jpg', '../images/4.jpg', '../images/5.jpg'];
+
+    var x = 0;
+
+    var imgs = document.getElementById('img');
+
+    setInterval(slider, 1000);
+
+    function slider() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+	}
+
+    </script>
+<!-- creating the div for effects of technology blog-->
+    	<div class="div" style="margin-top: 50px;margin-bottom: 50px;">
+		<h2 class="h2">Effects Of Technology In Life</h2>
+		<p class="pstyle">
+			
+			  The application of scientific techniques, materials and tools to make human’s life convenient and the work more productive can be termed as technology. It includes smartphones, internet, laptops and many more. They have taken an essential part in people’s day-to-day lives. They are the contributors for well being of human. Modern life luxuries can be satisfied by the use of technology. It mainly aims for the reduction of human effort. As other aspects technology has both Boon and Bane.<br><br>
+
+    In my everyday life I use two categories of technology: Informative, which helps to gain information, communicative, used for communication by using sign language. Its advancement has provided us the quicker ways to communicate I.e.  social media platforms. Modern inventions have led to many technologies. It has created easy access to information using internet search engines, increased productivity of industry, machines carry out most of the industrial and agricultural works which have resulted into production of more goods. Prior in business all the mathematical calculations were done manually but now all calculations, estimations have been easier.<br><br>
+    
+       Technology encourages innovation and creativity, makes travelling and exploring new places convenient, improvement in housing and lifestyle. With improvement in architectural technology we are able to build the home of our dreams. Many improvements have been done in health sectors which have reduced the death count of people using complex surgeries and by identifying life threatening diseases. Humans are able to explore another planet. People have many opportunities and choices. It makes interaction easier. Advancement of technology has led us to online banking, smart TV, virtual reality and many more in upcoming days.<br><br>
+
+  The convenient are not always beneficial. Technology has several disadvantages as well which includes hacking, Identity theft, cyber stalking. Youngsters spend their time surfing the internet and playing video games which are making them lazy. Communication over people with other places is increasing whereas there’s absence in quality family time which results in dysfunctional family relationships. Fraud using ATM is getting serious where the card scammers use the confidential information of people. Our lifestyle has become sedentary resulting in negative health. We are too dependent on modern equipment and are helpless without them.<br><br>
+
+   Technology with no doubts have eased our lives. It is definitely a boon in the development process. Undoubtedly technology has taken us to the moon but it has also made people bankrupt. In conclusion, it should be used to ease the life but we shouldn't let the technology to overpower us and make our life uncreative. <br><br>
+
+		</p>
+		</div>
+
+		
+	</div>
+<!-- creating footer in the webpage using footer tag to store technical information-->
+		<div style="width: 100%">
+		<footer class="footer" style="background-color: black; padding-top: 15px;">
+			
+			<p style="color: white;">&copy; Copyright 2020. All Rights Reserved. SAURAV KANDEL</p>
+
+		</footer>
+		</div>
+
+</body>
+</html>

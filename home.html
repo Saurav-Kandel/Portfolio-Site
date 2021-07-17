@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<!--giving meta tag to provide metadata about the HTML document-->
+	<meta charset="UTF-8">
+  	<meta name="description" content="Portfolio">
+  	<meta name="keywords" content="blog,research,CV">
+  	<meta name="author" content="Saurav Kandel">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="refresh" content="30">
+
+	<!-- link for the use of the external css build in another file-->
+	<link rel="stylesheet" type="text/css" href="css/external css.css">
+
+<!--decalring class for internal css to be used down in the code-->
+<style type="text/css">
+
+	.logo img{
+		position: absolute;
+		}
+
+	.div{
+		height: 250px;
+		width: 40%;
+		border: 5px solid;
+		background-color: yellow;
+		border-color: red;
+		transition: transform .2s;
+
+	}
+	.div:hover
+	{
+		transform: scale(1.1);
+		box-shadow: 5px 5px 5px 5px black;
+	}
+
+	.pstyle{
+		padding-top: 30px;
+		font-family: arial;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+</style>
+</head>
+		<!-- giving link for the background image used in the entire body of the webpage-->
+<body style="background: url(images/bg.jfif);background-size: 100% 100%;">
+
+	<!-- declaring main division where entire other div and data are stored except footer-->
+<div style="height: 1600px; width: 100%;">
+
+		<div style="height:200px;width:100%">
+			<!-- using header tag to create header to store logo and nav bar-->
+		<header class="header">
+
+			<div class="logo"><img src="images/logo.jpg" alt="logo" width="400px" height="200px"></a>
+			</div>
+			<!-- creating the navigation bar for the webpage-->
+			<nav class="topnav";>
+			<!--use of table tag to create a table for a nav bar content-->
+				<table class="navtable">
+				<tr>
+
+					<th>
+						<a class="active" href  ="home.html" >Home</a>
+					</th>
+						
+					<th>
+						<a href ="pages/CV.html"  >CV</a>
+					</th>
+						
+					<th>
+						<a href ="pages/blog.html" >Blog</a>
+					</th>
+
+					<th>
+						<a href ="pages/research.html">Research</a>
+					</th>
+
+					<th>
+						<a href ="pages/contact_us.html" >Contact us</a>
+					</th>
+			
+				</tr>
+
+
+				</table>   
+
+			</nav>
+
+		</header>
+
+		</div>
+
+		<div style="margin-top: 50px">
+			<h1 align="CENTER" > WELCOME TO HOME PAGE ! </h1>
+		</div>
+
+			<section>
+				<!-- creating different div and giving hyperlink to go through other webpages in the website-->
+					<div class="div" style="margin-left: 200px;margin-top: 50px">
+					<a style=" text-decoration: none;" href="pages/CV.html" title="go to cv ">
+
+						<h2>CV</h2>
+						<p class="pstyle"> - It includes : <br><br> --- Personal Information <br> --- Academic qualification <br> --- Soft skills <br> --- Technical skills <br><br> click here to go through my resume.</p>
+					</a>
+					</div>
+				
+
+					<div class="div" style="margin-left: 1000px;margin-top: 55px">
+					<a style=" text-decoration: none;" href="pages/blog.html" title="go to blog ">
+
+						<h2 >Blog</h2>
+						<p class="pstyle"> - Blog on Effect of Technology In Life <br><br><br><br>click here to check out my blog</p>
+					</a>
+					</div>
+			
+
+					<div class="div" style="margin-left: 200px;margin-top: 60px">
+					<a style=" text-decoration: none"; href="pages/research.html" title="go to research">
+
+						<h2>Research</h2>
+						<p class="pstyle"> - Information on the Research conducted <br><br><br> Want To Explore The Research Page ? Tap me !</p>
+					</a>
+					</div>
+				
+
+					<div class="div" style="margin-left: 1000px;margin-top: 65px">
+					<a style=" text-decoration: none"; href="pages/contact_us.html" title="go to contact_us ">
+
+						<h2>Contact Us</h2>
+						<p class="pstyle"> - It contains submission form <br> - Location to the company <br><br> click here to go to contact us page.</p>
+					</a>
+					</div>
+				</section>
+						
+		
+</div>
+	<!-- creating footer in the webpage using footer tag to store technical information-->
+		<section>
+		<div style="width: 100%">
+		<footer class="footer" style="background-color: black; padding-top: 15px;">
+			
+			<p style="color: white;">&copy; Copyright 2020. All Rights Reserved. SAURAV KANDEL</p>
+
+		</footer>
+		</div>
+		</section>
+
+
+</body>
+
+</html>
